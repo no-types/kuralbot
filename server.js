@@ -7,24 +7,6 @@ var path = require('path'),
 
 app.use(express.static('public'));
 
-
-/* You can use uptimerobot.com or a similar site to hit your /BOT_ENDPOINT to wake up your app and make your Twitter bot tweet. */
-
-// app.all("/" + process.env.BOT_ENDPOINT, function (req, res) {
-
-//   /* See EXAMPLES.js for some example code you can use. */
-//     twitter.tweet('அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு. \n Translation: "Primal Deity"" is first through all the world\'s domains', function(err, data){
-//       if (err){
-//         console.log(err);     
-//         res.sendStatus(500);
-//       }
-//       else{
-//         console.log('tweeted');
-//         res.sendStatus(200);
-//       }
-//    });
-// });
-
 let kuralCount = 0;
 
 app.all("/" + process.env.BOT_ENDPOINT, function (req, res) {
